@@ -1,0 +1,83 @@
+body{
+    background-image: url(https://images.pexels.com/photos/304664/pexels-photo-304664.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.main{
+    
+    margin-top: 50px;
+    margin-left: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 650px;
+    width: 1200px;
+    border-radius: 10px;
+   
+}
+#texts{
+    padding-left: 75px;
+    padding-top: 50px;
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+    width: 550px;
+    height: 600px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.space{
+    height: 25px;
+    width: 400px;
+}
+span{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#login{
+    height: 35px;
+    width: 400px;
+    background-color: plum;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#almost{
+    padding-left: 90px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.links{
+    width: 40px;
+    height: 40px;
+    background-color: skyblue;
+    border-radius: 5px;
+    float: left;
+    margin-left: 65px;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+#sign{
+    padding-left: 90px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.main02{
+    float: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    width: 575px;
+    height: 600px;
+}
+#side{
+    width: 600px;
+    height: 650px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
