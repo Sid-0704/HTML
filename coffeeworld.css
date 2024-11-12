@@ -1,0 +1,139 @@
+.head{
+    background-attachment: fixed;
+    background-color: black; 
+    height: 100px;
+    border-radius: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+ }
+    
+ 
+ .logo{
+     background-color: antiquewhite;
+     border-radius: 15px;
+     float: left;
+
+ }
+ .anchor{
+     padding-left: 125px;
+     padding-right: 125px;
+     font-size: 25px;
+     color: aliceblue;
+ }
+ .border{
+     background-color: black;
+ }
+ 
+ .links:hover{
+     background-color: rgb(162, 119, 39);
+     
+
+ }
+ body{
+     background-image: url(https://imgs.search.brave.com/1XWrfLWABo4922vNw-cddcnoxrnZ2pYUvme8r1gIR10/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI3/MTM4NjE2Ny9waG90/by9jb2ZmZWUuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPTVn/V1NoQlMtbFNhX3lj/bTFfb2xjbTl3cmlj/N2RLWU5NTW04UTc4/MC1BNzQ9);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     
+ }
+ .links{
+     width: 120px;
+     height: 40px;
+     border-radius: 10px;
+     float: left;
+     margin-left: 50px;
+     background-color: black;
+     margin-top: 30px;
+     padding-top: 10px;
+     
+     text-align: center;
+     padding-left: 5px;
+ }
+     
+     
+ .navigation{
+     color: wheat;
+     font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+     
+     
+ }
+ #heading{
+     color: white;
+     padding-right: 200px;
+     font-size: 70px;
+     padding-left: 15px;
+    
+ }
+ #search{
+     padding-top: 15px;
+     padding-left: 420px;
+ }
+ .data{
+     color: white;
+     font-size: 25px;
+     margin-left: 20px;
+ }
+ .shop{
+     background-color: rgb(255, 176, 30);
+     width: 100%;
+     border-radius: 10px;
+     height: 550px;
+ }
+ .text{
+     color: white;
+     font-size: 35px;
+     padding-left: 20px;
+     padding-top: 10px;
+ }
+ .shop_items{
+     float: left;
+     padding-left: 45px;
+     width: 250px;
+ }
+ .itemlist{
+     border-radius: 50%;
+ }
+ .details{
+     color: white;
+     
+     font-size: 25px;
+     padding-left: 25px;
+ }
+ #about{
+     background-color: rgb(255, 176, 30);
+     width: 100%;
+     border-radius: 10px;
+     height: 400px;
+ }
+ #contact{
+     background-color: rgb(255, 176, 30);
+     width: 100%;
+     border-radius: 10px;
+     height: 250px;
+ }
+ #end{
+     background-color: black;
+     color: white;
+     font-size: 25px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     text-align: center;
+     border-radius: 10px;
+     margin-top: 25px;
+ }
+ .endlinks{
+     width: 120px;
+     height: 80px;
+     border-radius: 20px;
+     float: left;
+     margin-left: 80px;
+     background-color: black;
+     margin-top: 30px;
+     padding-top: 20px;
+     
+     text-align: center;
+     padding-left: 10px;
+ }

@@ -1,9 +1,14 @@
 body{
-    background-image: url(https://images.pexels.com/photos/304664/pexels-photo-304664.jpeg?auto=compress&cs=tinysrgb&w=600);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-image: url(https://images.pexels.com/photos/434213/pexels-photo-434213.jpeg?cs=srgb&dl=aroma-aromatic-art-434213.jpg&fm=jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    background-color: #1d2a35 !important;
+    
 
 }
 
@@ -15,6 +20,7 @@ body{
     height: 650px;
     width: 1200px;
     border-radius: 10px;
+    
    
 }
 #texts{
@@ -26,10 +32,13 @@ body{
     width: 550px;
     height: 600px;
     font-family: 'Times New Roman', Times, serif;
+    
+   
 }
 .space{
     height: 25px;
     width: 400px;
+    border-radius: 10px;
 }
 span{
     font-size: 20px;
@@ -41,8 +50,12 @@ span{
     background-color: plum;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    box-shadow: 3px;
+   
+    
 }
-#almost{
+#continue{
     padding-left: 90px;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -53,11 +66,11 @@ span{
     background-color: skyblue;
     border-radius: 5px;
     float: left;
-    margin-left: 65px;
+    margin-left: 50px;
     background-color: black;
     font-family: 'Times New Roman', Times, serif;
 }
-#sign{
+#signup{
     padding-left: 90px;
     font-size: 20px;
     margin-bottom: 10px;
