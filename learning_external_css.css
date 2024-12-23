@@ -1,0 +1,50 @@
+*{
+    background-color: palevioletred;
+
+    
+}
+p{
+    background-color: paleturquoise;
+    color: black;
+    font-size: 20px;
+    padding-right: 56%;
+    
+    
+}
+h1{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-align: center;
+
+}
+.hello{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 15px;
+    padding: 10px;
+  
+    
+    
+}
+h3{
+    font-size: 25px;
+}
+ul{
+    font-size: 20px;
+    list-style-type: none;
+    
+
+    
+}
+.anchor{
+    color: aliceblue;
+    
+
+}
+div{
+    text-align: center;
+    background-color: black;
+
+    
+
+}

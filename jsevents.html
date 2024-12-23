@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .counter {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .counter.positive {
+      color: green;
+    }
+    .counter.negative {
+      color: red;
+    }
+    .counter.zero {
+      color: black;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <h1>Counter</h1>
+  <div id="counter" class="counter zero">0</div>
+  <button onclick="changeCounter(1)">Increase</button>
+  <button onclick="changeCounter(-1)">Decrease</button>
+  
+
+  <script>
+    let counterValue = 0;
+
+    function changeCounter(change) {
+      counterValue += change;
+      updateCounterDisplay();
+    }
+
+    function updateCounterDisplay() {
+      const counterElement = document.getElementById('counter');
+      counterElement.textContent = counterValue;
+
+      // Update the color based on the value
+      if (counterValue > 0) {
+        counterElement.className = 'counter positive';
+      } else if (counterValue < 0) {
+        counterElement.className = 'counter negative';
+      } else {
+        counterElement.className = 'counter zero';
+      }
+    }
+  </script>
+</body>
+</html>

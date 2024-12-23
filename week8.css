@@ -1,0 +1,28 @@
+
+table{
+   margin-left: 500px;
+    height: 600px;
+    width: 500px;
+   border: 5px black solid; 
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+
+#marktable{
+    border: 2px seashell dotted;
+    
+} 
+
+#details{
+    background-color: blue;
+}
+
+.hov:hover{
+    color: magenta;
+}
+
+
+

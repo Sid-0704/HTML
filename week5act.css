@@ -1,0 +1,17 @@
+#div01{
+ background-color: black;
+padding: 10px 10px 10px;
+}
+.anchor{
+    color: whitesmoke;
+    
+}
+#homeid:hover{
+    background-color: green;
+}
+#servicesid:hover{
+    background-color: white;
+    color: black;
+}
+
+

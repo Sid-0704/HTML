@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: aquamarine;
+        }
+        .head{
+            background-color: bisque;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+            
+        }
+        .marking{
+            background-color:skyblue;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 5px solid black;
+            padding: 10px;
+        }
+        .remarks{
+           
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 5px dotted black;
+            padding: 10px;
+        }
+        input[type="submit"],input[type="reset"]{
+            background-color: black;
+            color: white;
+            font-size: 15px;
+        }
+     
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="head">
+            <label for="name">
+            Enter your name: <input type="text" id="name" >
+            </label>
+
+        </div>
+        <div class="head"> <label for="age">
+            Enter your age: <input type="text" id="age">
+            </label>
+        </div>
+
+       <div class="marking"> 
+        Name of your class<br>
+            <input type="radio" name="section">K24GD
+            <input type="radio" name="section">K24AS 
+            <input type="radio" name="section">K24PK 
+        </div><br>
+        <div class="marking">
+            What are your splecialities? <br>
+            <input type="checkbox" name="Cohert">Web Dev
+            <input type="checkbox" name="Cohert">App Dev
+            <input type="checkbox" name="Cohert">Cybersecurity
+            <input type="checkbox" name="Cohert">Cloud Management <br><br>
+            Choose your Cohert
+            <select name="" id="">
+                <option value="">Web Dev</option>
+                <option value="">App Dev</option>
+                <option value="">Cloud Management</option>
+                <option value="">Cybersecurity</option>
+            </select><br>
+        </div>
+        <div class="remarks">
+            Please enter remarks <br>
+            <textarea name="" id="" rows="12" cols="200"></textarea>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset"> <br><br>
+            
+        </div>
+    
+    
+    </form>
+</body>
+</html>

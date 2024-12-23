@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+    }
+
+    form {
+  width: 300px;
+  margin: auto;
+    }
+
+    .form-group {
+  margin-bottom: 15px;
+  position: relative;
+    }
+
+    label {
+  display: block;
+  margin-bottom: 5px;
+    }
+
+    input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+    }
+
+    input:focus {
+  outline: none;
+    }
+
+    .message {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+    }
+
+    .message.valid {
+  color: green;
+    }
+
+    .message.invalid {
+  color: red;
+    }
+
+    input.valid {
+  border-color: green;
+    }   
+
+    input.invalid {
+  border-color: red;
+    }
+
+    button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+    }
+
+    button:hover {
+    background-color: #45a049;
+    }
+
+    </style>
+
+</head>
+
+<body>
+  <form id="form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <span class="message" id="nameMessage"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <span class="message" id="emailMessage"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password">
+      <span class="message" id="passwordMessage"></span>
+    </div>
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+
+
+  <script>
+    // Select form elements
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+const nameMessage = document.getElementById("nameMessage");
+const emailMessage = document.getElementById("emailMessage");
+const passwordMessage = document.getElementById("passwordMessage");
+const form = document.getElementById("form");
+
+// Validation functions
+const validateName = () => {
+const nameValue = nameInput.value.trim();
+if (nameValue.length >= 3) {
+nameMessage.textContent = "Looks good!";
+nameMessage.className = "message valid";
+nameInput.className = "valid";
+return true;
+} 
+else {
+nameMessage.textContent = "Name must be at least 3 characters long.";
+nameMessage.className = "message invalid";
+nameInput.className = "invalid";
+return false;
+}
+};
+
+const validateEmail = () => {
+const emailValue = emailInput.value.trim();
+const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+if (emailPattern.test(emailValue)) {
+emailMessage.textContent = "Valid email!";
+emailMessage.className = "message valid";
+emailInput.className = "valid";
+return true;
+} else {
+emailMessage.textContent = "Please enter a valid email address.";
+emailMessage.className = "message invalid";
+emailInput.className = "invalid";
+return false;
+}
+};
+
+const validatePassword = () => {
+const passwordValue = passwordInput.value.trim();
+if (passwordValue.length >= 6) {
+passwordMessage.textContent = "Strong password!";
+passwordMessage.className = "message valid";
+passwordInput.className = "valid";
+return true;
+} else {
+passwordMessage.textContent = "Password must be at least 6 characters long.";
+passwordMessage.className = "message invalid";
+passwordInput.className = "invalid";
+return false;
+}
+};
+
+// Event listeners
+nameInput.addEventListener("input", validateName);
+emailInput.addEventListener("input", validateEmail);
+passwordInput.addEventListener("input", validatePassword);
+
+// Form submission
+form.addEventListener("submit", (event) => {
+if (!validateName() || !validateEmail() || !validatePassword()) {
+event.preventDefault(); // Prevent form submission if validation fails
+}
+});
+
+</script>
+
+  
+</body>
+</html>
